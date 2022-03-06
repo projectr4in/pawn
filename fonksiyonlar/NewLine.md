@@ -7,17 +7,17 @@
 ```c
 NewLine(string[])
 {
-	new len = strlen(string);
-	if(string[0] == 0) return;
+    new len = strlen(string);
+    if(string[0] == 0) return;
     if((string[len - 1] == '\n') || (string[len - 1] == '\r')) 
-	{
-		string[len - 1] = 0;
-		if(string[0] == 0) return;
-		if((string[len - 2] == '\n') || (string[len - 2] == '\r'))
-		{
-			string[len - 2] = 0;
-		}
-	}
+    {
+        string[len - 1] = 0;
+        if(string[0] == 0) return;
+        if((string[len - 2] == '\n') || (string[len - 2] == '\r'))
+        {
+            string[len - 2] = 0;
+        }
+    }
 }
 ```
 
@@ -32,6 +32,8 @@ main()
         // Açtığımız dosyadaki metinleri almak için değişken oluşturuyoruz
         buffer[256]
     ;
+
+    // Dosya başarıyla açıldıysa
     if(dosya)
     {
         // Döngü yardımıyla dosyadaki verileri okuyoruz
