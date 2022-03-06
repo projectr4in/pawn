@@ -2,7 +2,6 @@
 | Fonksiyon Adı | Parametreler |                    İşlev                    |
 |---------------|--------------|---------------------------------------------|
 | IsimCek       | playerid     | Sunucuda bulunan bir oyuncunun adını çeker. |
-<br>
 
 ### **Fonksiyon**
 ```c
@@ -18,7 +17,6 @@ IsimCek(playerid)
     return isim;
 }
 ```
-<br>
 
 ### **Kullanım**
 ```c
